@@ -30,7 +30,7 @@
             <a href="#" style="text-decoration: none; color: black;">Forgot password?</a>
         </div>
         <div class="mt-3">
-            Don't have an account? <a href="Singup page.htm" style="text-decoration: none;color:#06b30e ;">Sign up</a>
+            Don't have an account? <a href="Singup page.php" style="text-decoration: none;color:#06b30e ;">Sign up</a>
         </div>
     </div>
 </div>
