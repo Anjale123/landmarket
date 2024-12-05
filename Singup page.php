@@ -36,7 +36,7 @@
 
         </form>
         <div class="mt-3">
-            Already have an account? <a href="Loginpage.html" style="color: #06b30e; text-decoration: none">Log in</a>
+            Already have an account? <a href="Loginpage.php" style="color: #06b30e; text-decoration: none">Log in</a>
         </div>
 
     </div>
