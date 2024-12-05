@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Land Sale Posting Page</title>
     <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     
@@ -15,14 +15,14 @@
     <form>
         <!-- Property Title -->
         <div class="form-group">
-            <label for="propertyTitle"><b>Property Title</b></label>
-            <input type="text" class="form-control" id="propertyTitle" placeholder="Enter property title" style="border-color: #06b30e" required>
+            <label for="propertyTitle" style="margin-bottom: 10px"><b>Property Title</b></label>
+            <input type="text" class="form-control" style="margin-bottom: 20px;border-color:#06b30e;" id="propertyTitle" placeholder="Enter property title" required>
         </div>
 
         <!-- Location -->
         <div class="form-group">
-            <label for="locationSelect"><b>Location</b></label>
-            <select class="form-control" id="locationSelect" style="border-color: #06b30e">
+            <label for="locationSelect" style="margin-bottom: 10px"><b>Location</b></label>
+            <select class="form-control" id="locationSelect" style="margin-bottom: 20px;border-color:#06b30e">
                 <option>All of Sri Lanka</option>
                 <option>Western Province</option>
                 <option>North Western Province</option>
@@ -33,58 +33,59 @@
                 <option>Uwa Province</option>
                 <option>Southern Province</option>
                 <option>North Central Province</option>
+                <!-- Add more options as needed -->
             </select>
-
         </div>
 
         <!-- Description -->
         <div class="form-group">
-            <label for="propertyDescription"><b>Description</b></label>
-            <textarea class="form-control" id="propertyDescription" rows="4" placeholder="Describe your property" style="border-color: #06b30e" required></textarea>
+            <label for="propertyDescription" style="margin-bottom: 10px"><b>Description</b></label>
+            <textarea class="form-control" style="margin-bottom: 20px;border-color:#06b30e ;" id="propertyDescription" rows="4" placeholder="Describe your property" required></textarea>
         </div>
         
         <!-- Upload Images with Preview -->
         <div class="form-group">
-            <label for="propertyImages"><b>Upload Images</b></label>
-            <input type="file" class="form-control-file" id="propertyImages" multiple required onchange="previewImages(event)" style="border-color: #06b30e">
+            <label for="propertyImages" style="margin-bottom: 10px;border-color:#06b30e;"><b>Upload Images</b></label><br>
+            <input type="file" class="form-control-file" style="margin-bottom: 20px" id="propertyImages" multiple required onchange="previewImages(event)">
+            <input type="file" class="form-control-file" style="margin-bottom: 20px" id="propertyImages" multiple required onchange="previewImages(event)">
+            <input type="file" class="form-control-file" style="margin-bottom: 20px" id="propertyImages" multiple required onchange="previewImages(event)">
         </div>
 
-        <!-- Image Preview Section -->
-        <div class="form-group" id="imagePreview" style="display: flex; flex-wrap: wrap; gap: 10px; border-color: #06b30e"></div>
+        
 
         <div class="form-group">
-            <label for="Size of the Property"><b>Size(perches) </b></label>
-            <input type="number" class="form-control" id="propertySize" placeholder="Enter the size of your land" style="border-color: #06b30e" required>
+            <label for="Size of the Property" style="margin-bottom: 10px" ><b>Size(perches) </b></label>
+            <input type="number" class="form-control" style="margin-bottom: 20px;border-color:#06b30e;" id="propertySize" placeholder="Enter the size of your land" required>
         </div>
 
          <!-- Price -->
          <div class="form-group">
-            <label for="propertyPrice"><b>Price ($)</b></label>
-            <input type="number" class="form-control" id="propertyPrice" placeholder="Enter price" style="border-color: #06b30e" required>
+            <label for="propertyPrice" style="margin-bottom: 10px"><b>Price ($)</b></label>
+            <input type="number" class="form-control" style="margin-bottom: 20px;border-color:#06b30e;" id="propertyPrice" placeholder="Enter price" required>
         </div>
 
 
         <!-- Contact Information -->
         <div class="form-group">
-            <label for="contactInfo"><b>Contact Information</b></label>
-            <input type="text" class="form-control" id="contactInfo" placeholder="Enter your contact details" style="border-color: #06b30e" required>
+            <label for="contactInfo" style="margin-bottom: 10px"><b>Contact Information</b></label>
+            <input type="text" class="form-control" style="margin-bottom: 20px;border-color:#06b30e;" id="contactInfo" placeholder="Enter your contact details" required>
         </div>
 
         <div class="form-group">
-            <label for="contactInfo"><b>Do you come with surveyor or not?</b></label><br>
-            <input type="radio" style="margin-left: 20px;" style="border-color: #06b30e" required> Yes
-            <input type="radio" style="margin-left: 20px;" style="border-color: #06b30e" required> No
+            <label for="contactInfo" style="margin-bottom: 10px"><b>Do you come with surveyor or not?</b></label><br>
+            <input type="radio" style="margin-bottom: 20px" style="margin-left: 20px;" required> Yes
+            <input type="radio" style="margin-bottom: 20px" style="margin-left: 20px;" required> No
         </div>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-block" style="background-color: #06b30e; color: white; border: none;">Submit Listing</button>
+        <button type="submit" class="btn btn-block" style="margin-bottom: 10px;width: 100%;background-color:#06b30e; color: white;">Post</button>
     </form>
 </div>
 
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 
 <!-- JavaScript for Image Preview -->
 <script>
