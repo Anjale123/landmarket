@@ -16,13 +16,13 @@
         <!-- Property Title -->
         <div class="form-group">
             <label for="propertyTitle"><b>Property Title</b></label>
-            <input type="text" class="form-control" id="propertyTitle" placeholder="Enter property title" required>
+            <input type="text" class="form-control" id="propertyTitle" placeholder="Enter property title" style="border-color: #06b30e" required>
         </div>
 
         <!-- Location -->
         <div class="form-group">
             <label for="locationSelect"><b>Location</b></label>
-            <select class="form-control" id="locationSelect">
+            <select class="form-control" id="locationSelect" style="border-color: #06b30e">
                 <option>All of Sri Lanka</option>
                 <option>Western Province</option>
                 <option>North Western Province</option>
@@ -33,51 +33,51 @@
                 <option>Uwa Province</option>
                 <option>Southern Province</option>
                 <option>North Central Province</option>
-                <!-- Add more options as needed -->
             </select>
+
         </div>
 
         <!-- Description -->
         <div class="form-group">
             <label for="propertyDescription"><b>Description</b></label>
-            <textarea class="form-control" id="propertyDescription" rows="4" placeholder="Describe your property" required></textarea>
+            <textarea class="form-control" id="propertyDescription" rows="4" placeholder="Describe your property" style="border-color: #06b30e" required></textarea>
         </div>
         
         <!-- Upload Images with Preview -->
         <div class="form-group">
             <label for="propertyImages"><b>Upload Images</b></label>
-            <input type="file" class="form-control-file" id="propertyImages" multiple required onchange="previewImages(event)">
+            <input type="file" class="form-control-file" id="propertyImages" multiple required onchange="previewImages(event)" style="border-color: #06b30e">
         </div>
 
         <!-- Image Preview Section -->
-        <div class="form-group" id="imagePreview" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+        <div class="form-group" id="imagePreview" style="display: flex; flex-wrap: wrap; gap: 10px; border-color: #06b30e"></div>
 
         <div class="form-group">
             <label for="Size of the Property"><b>Size(perches) </b></label>
-            <input type="number" class="form-control" id="propertySize" placeholder="Enter the size of your land" required>
+            <input type="number" class="form-control" id="propertySize" placeholder="Enter the size of your land" style="border-color: #06b30e" required>
         </div>
 
          <!-- Price -->
          <div class="form-group">
             <label for="propertyPrice"><b>Price ($)</b></label>
-            <input type="number" class="form-control" id="propertyPrice" placeholder="Enter price" required>
+            <input type="number" class="form-control" id="propertyPrice" placeholder="Enter price" style="border-color: #06b30e" required>
         </div>
 
 
         <!-- Contact Information -->
         <div class="form-group">
             <label for="contactInfo"><b>Contact Information</b></label>
-            <input type="text" class="form-control" id="contactInfo" placeholder="Enter your contact details" required>
+            <input type="text" class="form-control" id="contactInfo" placeholder="Enter your contact details" style="border-color: #06b30e" required>
         </div>
 
         <div class="form-group">
             <label for="contactInfo"><b>Do you come with surveyor or not?</b></label><br>
-            <input type="radio" style="margin-left: 20px;" required> Yes
-            <input type="radio" style="margin-left: 20px;" required> No
+            <input type="radio" style="margin-left: 20px;" style="border-color: #06b30e" required> Yes
+            <input type="radio" style="margin-left: 20px;" style="border-color: #06b30e" required> No
         </div>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-block">Submit Listing</button>
+        <button type="submit" class="btn btn-primary btn-block" style="background-color: #06b30e; color: white; border: none;">Submit Listing</button>
     </form>
 </div>
 
