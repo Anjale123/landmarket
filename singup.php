@@ -3,15 +3,15 @@
 ?>
 <?php
     if(isset($_POST["signup"])){
-        if($_POST["password"] == $_POST["confirm-password"]){
-            $fullname = mysqli_real_escape_string($connection,$_POST["name"]);
-            $mail = mysqli_real_escape_string($connection,$_POST["email"]);
+        if($_POST["pswd"] == $_POST["cpswd"]){
+            $fullname = mysqli_real_escape_string($connection,$_POST["fullname"]);
+            $mail = mysqli_real_escape_string($connection,$_POST["mail"]);
 
-            $sql = "INSERT INTO users (fullname,mail,pwsd) VALUES('{$fullname}','{$mail}','{$_POST["password"]}')";
+            $sql = "INSERT INTO users (fullname,mail,pswd) VALUES('{$fullname}','{$mail}','{$_POST["pswd"]}')";
             $result_set = mysqli_query($connection,$sql);
 
             if(isset($result_set)){
-                header("Location: Loginpage.php");
+                header("Location: login.php");
             }
         }
     }
