@@ -43,13 +43,13 @@
         <form>
             <div class="form-group">
                 <label for="email" style="margin-bottom: 5px"><b> Email Address</b></label>
-                <input type="email" style="margin-bottom: 20px;border-color:#06b30e;" class="form-control" id="email" placeholder="Enter email">
+                <input type="email" name="mail" style="margin-bottom: 20px;border-color:#06b30e;" class="form-control" id="email" placeholder="Enter email">
             </div>
             <div class="form-group">
                 <label for="password" style="margin-bottom: 5px"><b>Password</b></label>
-                <input type="password" style="margin-bottom: 20px;border-color:#06b30e;" class="form-control" id="password" placeholder="Password">
+                <input type="password" name="pswd" style="margin-bottom: 20px;border-color:#06b30e;" class="form-control" id="password" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-block" style="background-color: #06b30e;color:white;">Login</button>
+            <button type="submit" name="login" class="btn btn-block" style="background-color: #06b30e;color:white;">Login</button>
         </form>
         <div class="mt-3">
             <a href="#" style="text-decoration: none; color: black;">Forgot password?</a>
