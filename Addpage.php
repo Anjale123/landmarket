@@ -154,7 +154,7 @@
 
     <!-- Footer Link -->
     <div class="text-center">
-        <a href="Front_Page.html" class="btn" style="background-color: #06b30e;color: white;">Go Home Page</a>
+        <a href="index.php" class="btn" style="background-color: #06b30e;color: white;">Go Home Page</a>
     </div>
 </div>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
