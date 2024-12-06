@@ -53,8 +53,7 @@
                 <label for="confirm-password"><b>Confirm Password</b></label>
                 <input type="password" name="cpswd" class="form-control" style="margin-bottom: 25px;border-color:#06b30e;" id="confirm-password" placeholder="Confirm password">
             </div>
-            <button type="submit" class="btn btn-block" style="background-color: #06b30e; color: white; border: none;">Sign Up</button>
-
+            <button type="submit" name="signup" class="btn btn-block" style="background-color: #06b30e; color:white;" style="margin-bottom: 10px">Sign Up</button>
         </form>
         <div class="mt-3">
             Already have an account? <a href="Loginpage.php" style="color: #06b30e; text-decoration: none">Log in</a>
