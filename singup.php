@@ -39,19 +39,19 @@
         <form>
             <div class="form-group">
                 <label for="name"><b>Full Name</b></label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your full name" style="border-color: #06b30e">
+                <input type="text" name="fullname" class="form-control" style="margin-bottom: 25px;border-color:#06b30e;"id="name" placeholder="Enter your full name">
             </div>
             <div class="form-group">
                 <label for="email"><b>Email address</b></label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" style="border-color: #06b30e">
+                <input type="email" name="mail" class="form-control" style="margin-bottom: 25px;border-color:#06b30e;" id="email" placeholder="Enter your email">
             </div>
             <div class="form-group">
                 <label for="password"><b>Password</b></label>
-                <input type="password" class="form-control" id="password" placeholder="Enter password" style="border-color: #06b30e">
+                <input type="password" name="pswd" class="form-control" style="margin-bottom: 25px;border-color:#06b30e;" id="password" placeholder="Enter password">
             </div>
             <div class="form-group">
                 <label for="confirm-password"><b>Confirm Password</b></label>
-                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" style="border-color: #06b30e">
+                <input type="password" name="cpswd" class="form-control" style="margin-bottom: 25px;border-color:#06b30e;" id="confirm-password" placeholder="Confirm password">
             </div>
             <button type="submit" class="btn btn-block" style="background-color: #06b30e; color: white; border: none;">Sign Up</button>
 
