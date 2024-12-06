@@ -38,7 +38,7 @@
 
 <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="login-form text-center p-4 shadow rounded">
-        <img src="user.png" alt="">
+        <img src="Image/user.png" alt="">
         <h2 class="mb-4">Login</h2>
         <form>
             <div class="form-group">
