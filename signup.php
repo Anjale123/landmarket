@@ -30,7 +30,7 @@
 
 <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="signup-form text-center p-5 shadow rounded">
-        <img src="user.png" alt="">
+        <img src="Image/user.png" alt="">
         <h2 class="mb-4">Sign Up</h2>
         <form method="post" action="signup.php">
             <div class="form-group" style="margin-bottom: 10px">
