@@ -2,22 +2,17 @@
     require_once 'connection/connection.php';
 ?>
 <?php
-    session_start();
-    if(isset($_POST["login"])){
-        $mail = mysqli_real_escape_string($connection,$_POST["mail"]);
-        $pswd = mysqli_real_escape_string($connection,$_POST["pswd"]);
+    if(isset($_POST["signup"])){
+        if($_POST["pswd"] == $_POST["cpswd"]){
+            $fullname = mysqli_real_escape_string($connection,$_POST["fullname"]);
+            $mail = mysqli_real_escape_string($connection,$_POST["mail"]);
 
-        if($mail != "" && $pswd != ""){
-            $sql1 = "SELECT * FROM users WHERE mail='{$mail}' AND pswd='{$pswd}'";
+            $sql = "INSERT INTO users (fullname,mail,pswd) VALUES('{$fullname}','{$mail}','{$_POST["pswd"]}')";
+            $result_set = mysqli_query($connection,$sql);
 
-            $result_set1 = mysqli_query($connection,$sql1);
-
-            if(mysqli_num_rows($result_set1) == 1){
-                $row = mysqli_fetch_assoc($result_set1);
-
-                $_SESSION['user_id'] = $row['userid'];
-                header("Location: index.php");
-            }        
+            if(isset($result_set)){
+                header("Location: login.php");
+            }
         }
     }
 ?>
