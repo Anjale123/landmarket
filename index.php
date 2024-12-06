@@ -59,7 +59,7 @@
       <a class="nav-link" href="#"><img src="Image/chat.png" class="img" alt="" width="25px" height="25px">&nbsp;Chat</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="login.php"><img src="login.png" class="img" alt="" width="25px" height="25px">&nbsp;Login</a>
+      <a class="nav-link" href="login.php"><img src="Image/login.png" class="img" alt="" width="25px" height="25px">&nbsp;Login</a>
     </li>
     <li class="nav-item">
       <a class="btn post-ad-btn" href="Postpage.php ">POST YOUR AD</a>
@@ -70,7 +70,7 @@
 </nav>
 
 <!-- Search Bar -->
-  <img src="land.jpg" class="img" width="100%" height="300px" alt="...">
+  <img src="Image/land.jpg" class="img" width="100%" height="300px" alt="...">
     <br>
     <br>
 
@@ -128,7 +128,7 @@
           <div class="card mb-3">
               <div class="row no-gutters">
                   <div class="col-md-4">
-                      <img src="land2.jpg" class="card-img" alt="Land Image">
+                      <img src="Image/land2.jpg" class="card-img" alt="Land Image">
                   </div>
                   <div class="col-md-8">
                       <div class="card-body">
@@ -146,7 +146,7 @@
           <div class="card mb-8">
               <div class="row no-gutters">
                   <div class="col-md-4">
-                      <img src="land1.jpg" class="card-img" alt="Land Image">
+                      <img src="Image/land1.jpg" class="card-img" alt="Land Image">
                   </div>
                   <div class="col-md-8">
                       <div class="card-body">
@@ -162,7 +162,7 @@
               <div class="card mb-8">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="land3.jpg" class="card-img" alt="Land Image">
+                        <img src="Image/land3.jpg" class="card-img" alt="Land Image">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -178,7 +178,7 @@
                 <div class="card mb-8">
                   <div class="row no-gutters">
                       <div class="col-md-4">
-                          <img src="land5.jpg" class="card-img" alt="Land Image">
+                          <img src="Image/land5.jpg" class="card-img" alt="Land Image">
                       </div>
                       <div class="col-md-8">
                           <div class="card-body">
