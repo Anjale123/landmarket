@@ -3,7 +3,7 @@
 ?>
 <?php
     if(isset($_POST["signup"])){
-        if($_POST["pswd"] == $_POST["cpswd"]){
+        if($_POST["pwsd"] == $_POST["cpswd"]){
             $fullname = mysqli_real_escape_string($connection,$_POST["fullname"]);
             $mail = mysqli_real_escape_string($connection,$_POST["mail"]);
 
@@ -47,7 +47,7 @@
             </div>
             <div class="form-group">
                 <label for="password"><b>Password</b></label>
-                <input type="password" name="pswd" class="form-control" style="margin-bottom: 25px;border-color:#06b30e;" id="password" placeholder="Enter password">
+                <input type="password" name="pwsd" class="form-control" style="margin-bottom: 25px;border-color:#06b30e;" id="password" placeholder="Enter password">
             </div>
             <div class="form-group">
                 <label for="confirm-password"><b>Confirm Password</b></label>
