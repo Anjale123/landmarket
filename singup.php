@@ -7,7 +7,7 @@
             $fullname = mysqli_real_escape_string($connection,$_POST["fullname"]);
             $mail = mysqli_real_escape_string($connection,$_POST["mail"]);
 
-            $sql = "INSERT INTO users (fullname,mail,pswd) VALUES('{$fullname}','{$mail}','{$_POST["pswd"]}')";
+            $sql = "INSERT INTO users (fullname,mail,pwsd) VALUES('{$fullname}','{$mail}','{$_POST["pswd"]}')";
             $result_set = mysqli_query($connection,$sql);
 
             if(isset($result_set)){
