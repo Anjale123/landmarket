@@ -56,7 +56,7 @@
 <div class="collapse navbar-collapse">
   <ul class="navbar-nav ms-auto">
     <li class="nav-item">
-      <a class="nav-link" href="#"><img src="chat.png" class="img" alt="" width="25px" height="25px">&nbsp;Chat</a>
+      <a class="nav-link" href="#"><img src="Image/chat.png" class="img" alt="" width="25px" height="25px">&nbsp;Chat</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="login.php"><img src="login.png" class="img" alt="" width="25px" height="25px">&nbsp;Login</a>
