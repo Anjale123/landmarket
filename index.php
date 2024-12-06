@@ -178,7 +178,7 @@
                 <div class="card mb-8">
                   <div class="row no-gutters">
                       <div class="col-md-4">
-                      <img src="Image/land3.jpg" class="card-img" alt="Land Image">
+                          <img src="Image/land5.jpg" class="card-img" alt="Land Image">
                       </div>
                       <div class="col-md-8">
                           <div class="card-body">
