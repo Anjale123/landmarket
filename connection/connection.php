@@ -1,5 +1,5 @@
 <?php
-    $hostname = "127.0.0.1";
+    $hostname = "127.0.0.1:3306";
     $username = "root";
     $password = "mariadb";
     $dbname = "landmarket";
