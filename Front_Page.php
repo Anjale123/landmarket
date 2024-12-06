@@ -59,7 +59,7 @@
       <a class="nav-link" href="#"><img src="chat.png" class="img" alt="" width="25px" height="25px">&nbsp;Chat</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Loginpage.php"><img src="login.png" class="img" alt="" width="25px" height="25px">&nbsp;Login</a>
+      <a class="nav-link" href="login.php"><img src="login.png" class="img" alt="" width="25px" height="25px">&nbsp;Login</a>
     </li>
     <li class="nav-item">
       <a class="btn post-ad-btn" href="Postpage.php ">POST YOUR AD</a>
