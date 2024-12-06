@@ -43,17 +43,17 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="land1.jpg" class="d-block w-100" height="500px" alt="...">
+            <img src="Image/land1.jpg" class="d-block w-100" height="500px" alt="...">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="land2.jpg" class="d-block w-100" height="500px" alt="...">
+            <img src="Image/land2.jpg" class="d-block w-100" height="500px" alt="...">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
           <div class="carousel-item">
-            <img src="land4.jpg" class="d-block w-100" height="500px" alt="...">
+            <img src="Image/land4.jpg" class="d-block w-100" height="500px" alt="...">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
@@ -98,7 +98,7 @@
         <!-- First Ad -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-                <img src="land1.jpg" class="card-img-top" alt="House Image">
+                <img src="Image/land1.jpg" class="card-img-top" alt="House Image">
                 <div class="card-body">
                     <h6 class="card-title">4 Bedrooms House for Rent in Gampaha</h6>
                     <p class="card-text text-muted">Beds: 4, Baths: 1</p>
@@ -112,7 +112,7 @@
         <!-- Second Ad -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-                <img src="land2.jpg" class="card-img-top" alt="House Image">
+                <img src="Image/land2.jpg" class="card-img-top" alt="House Image">
                 <div class="card-body">
                     <h6 class="card-title">Fully Furnished House for Rent in Gampaha</h6>
                     <p class="card-text text-muted">Beds: 5, Baths: 3</p>
@@ -126,7 +126,7 @@
         <!-- Third Ad -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-                <img src="land4.jpg" class="card-img-top" alt="House Image">
+                <img src="Image/land4.jpg" class="card-img-top" alt="House Image">
                 <div class="card-body">
                     <h6 class="card-title">House for Rent in Negombo</h6>
                     <p class="card-text text-muted">Beds: 3, Baths: 1</p>
@@ -140,7 +140,7 @@
         <!-- Fourth Ad -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-                <img src="land5.jpg" class="card-img-top" alt="House Image">
+                <img src="Image/land5.jpg" class="card-img-top" alt="House Image">
                 <div class="card-body">
                     <h6 class="card-title">House for Rent in Jaela</h6>
                     <p class="card-text text-muted">Beds: 4, Baths: 3</p>
