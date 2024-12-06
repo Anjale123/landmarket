@@ -11,7 +11,7 @@
             $result_set = mysqli_query($connection,$sql);
 
             if(isset($result_set)){
-                header("Location: login.php");
+                header("Location: Loginpage.php");
             }
         }
     }
