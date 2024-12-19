@@ -73,8 +73,8 @@
 
         <div class="form-group">
             <label for="contactInfo" style="margin-bottom: 10px"><b>Do you come with surveyor or not?</b></label><br>
-            <input type="radio" style="margin-bottom: 20px" style="margin-left: 20px;" required> Yes
-            <input type="radio" style="margin-bottom: 20px" style="margin-left: 20px;" required> No
+            <input type="radio" name="park" style="margin-bottom: 20px" style="margin-left: 20px;" required> Yes
+            <input type="radio" name="park" style="margin-bottom: 20px" style="margin-left: 20px;" required> No
         </div>
 
         <!-- Submit Button -->
