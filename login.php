@@ -8,7 +8,7 @@
         $pswd = mysqli_real_escape_string($connection,$_POST["pswd"]);
 
         if($mail != "" && $pswd != ""){
-            $sql1 = "SELECT * FROM users WHERE mail='{$mail}' AND pswd='{$pswd}'";
+            $sql1 = "SELECT * FROM users WHERE mail='{$mail}' AND pwsd='{$pswd}'";
 
             $result_set1 = mysqli_query($connection,$sql1);
 
