@@ -1,3 +1,10 @@
+<?php
+  require_once 'connection/connection.php';
+?>
+
+<?php
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +66,14 @@
       <a class="nav-link" href="#"><img src="Image/chat.png" class="img" alt="" width="25px" height="25px">&nbsp;Chat</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="login.php"><img src="Image/login.png" class="img" alt="" width="25px" height="25px">&nbsp;Login</a>
+    <?php
+        if(!isset($_SESSION['user_id'])){
+          echo "<a class='nav-link' href='login.php'><img src='login.png' class='img' width='25px' height='25px'>&nbsp;Login</a>";
+        }else{
+          echo "<a class='nav-link' href='logout.php'><img src='login.png' class='img' width='25px' height='25px'>&nbsp;Logout</a>";
+        }
+      ?>
+      
     </li>
     <li class="nav-item">
       <a class="btn post-ad-btn" href="postadd.php ">POST YOUR AD</a>
@@ -86,7 +100,7 @@
     <div class="row">
       <!-- Sidebar Filters -->
       <div class="col-md-3">
-          <div class="card mb-4">
+      <div style="border:1px solid #06b30e;" class="card mb-4">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
         <hr>
@@ -112,7 +126,7 @@
                       </div>
                       <div class="form-group">
                           <label for="sortBy">Sort by</label>
-                          <select class="form-control" id="sortBy">
+                          <select class="form-control" style="border:1px solid #06b30e;" id="sortBy">
                               <option>Newest on Top</option>
                               <option>Price: Low to High</option>
                               <option>Price: High to Low</option>
@@ -125,74 +139,39 @@
 
       <!-- Land Listings -->
       <div class="col-md-9">
-          <div class="card mb-3">
-              <div class="row no-gutters">
-                  <div class="col-md-4">
-                      <img src="Image/land2.jpg" class="card-img" alt="Land Image">
-                  </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h5 class="card-title">Land for Sale in Katunayaka</h5>
-                          <p class="card-text">Rs 700,000 per perch</p>
-                          <p class="card-text">10 perchues</p>
+      <?php
+          $sql3 = "SELECT * FROM property";
 
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-        
+          //<a href=\"product.php?product_id={$data['productid']}\
 
-          <div class="card mb-8">
-              <div class="row no-gutters">
-                  <div class="col-md-4">
-                      <img src="Image/land1.jpg" class="card-img" alt="Land Image">
-                  </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h5 class="card-title">Land for Sale in Anuradhapuraya</h5>
-                          <p class="card-text">50 perchues</p>
-                          <p class="card-text">Rs.1276,000 total price</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 5 days ago</small></p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-<br>
-              <div class="card mb-8">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="Image/land4.jpg" class="card-img" alt="Land Image">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Land for Sale in Vavuniya</h5>
-                            <p class="card-text">15 perchues</p>
-                            <p class="card-text">Rs.700,000 total price</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 1 hour ago</small></p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-<br>
-                <div class="card mb-8">
-                  <div class="row no-gutters">
-                      <div class="col-md-4">
-                          <img src="Image/land5.jpg" class="card-img" alt="Land Image">
-                      </div>
-                      <div class="col-md-8">
-                          <div class="card-body">
-                              <h5 class="card-title">Land for Sale in Kandy</h5>
-                              <p class="card-text">10 perchues</p>
-                              <p class="card-text">Rs.1,000,000 total price</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 50 days ago</small></p>
-                            </div>
-                          </div>
-                      </div>
-                  </div>
+          if($result_set3 = $connection->query($sql3)){
+            while($data = $result_set3->fetch_array(MYSQLI_ASSOC)){
+              echo "<a href=\"adpage.php?property_id={$data['pid']}\" style='text-decoration:none;'>" . 
+                      "<div class='card mb-3' style='border:1px solid #06b30e;'>" . 
+                        "<div class='row no-gutters'>" . 
+                          "<div class='col-md-4'>" . 
+                            "<img src='./images/properties/property" . $data['img1'] . "' class='card-img' alt='Land Image'>" . 
+                          "</div>" . 
+                          "<div class='col-md-8'>" . 
+                            "<div class='card-body'>" . 
+                              "<h5 class='card-title'>" . $data['title'] . "</h5>" . 
+                              "<p class=''>" . $data['price'] . "</p>" . 
+                              "<p class=''>" . $data['size'] . " Perches" . "</p>" . 
+                              "<p class='card-text'>" . "<small class='text-body-secondary'>" . $data['location'] . "</small>" . "</p>" . 
+                            "</div>" . 
+                          "</div>" . 
+                        "</div>" . 
+                      "</div>" . 
+                    "</a>";
+
+            }
+          }
+        ?>
+
           </div>
           </div>
           <br>
+    
 
           <!-- Add more listings as needed -->
       </div>
