@@ -2,10 +2,6 @@
   require_once 'connection/connection.php';
 ?>
 
-<?php
-  session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -141,8 +137,6 @@
       <div class="col-md-9">
       <?php
           $sql3 = "SELECT * FROM property";
-
-          //<a href=\"product.php?product_id={$data['productid']}\
 
           if($result_set3 = $connection->query($sql3)){
             while($data = $result_set3->fetch_array(MYSQLI_ASSOC)){
