@@ -68,9 +68,9 @@
     <li class="nav-item">
     <?php
         if(!isset($_SESSION['user_id'])){
-          echo "<a class='nav-link' href='Image/login.php'><img src='login.png' class='img' width='25px' height='25px'>&nbsp;Login</a>";
+          echo "<a class='nav-link' href='login.php'><img src='Image/login.png' class='img' width='25px' height='25px'>&nbsp;Login</a>";
         }else{
-          echo "<a class='nav-link' href='Image/logout.php'><img src='login.png' class='img' width='25px' height='25px'>&nbsp;Logout</a>";
+          echo "<a class='nav-link' href='logout.php'><img src='Image/login.png' class='img' width='25px' height='25px'>&nbsp;Logout</a>";
         }
       ?>
       
