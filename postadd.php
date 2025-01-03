@@ -1,12 +1,11 @@
 <?php
     require_once 'connection/connection.php';
 ?>
-
 <?php
     session_start();
 
-    if(isset($_SESSION['user_id'])){
-        header("Location: login.php");
+    if(!isset($_SESSION['user_id'])){
+      header("Location: login.php");
     }
 
     if(isset($_POST["postadd"])){
@@ -41,7 +40,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +54,7 @@
 
 <div class="container my-5">
     <h2 class="text-center mb-4"><b>Post Your Land for Sale</b></h2>
-    <form method="post action="postadd.php" enctype="multipart/form-data">
+    <form method="post" action="postadd.php" enctype="multipart/form-data">
         <!-- Property Title -->
         <div class="form-group">
             <label for="propertyTitle" style="margin-bottom: 10px"><b>Property Title</b></label>
@@ -117,8 +115,8 @@
 
         <div class="form-group">
             <label for="contactInfo" style="margin-bottom: 10px"><b>Do you come with surveyor or not?</b></label><br>
-            <input type="radio" name="surveyor" style="margin-bottom: 20px" style="margin-left: 20px;" required> Yes
-            <input type="radio" name="surveyor" style="margin-bottom: 20px" style="margin-left: 20px;" required> No
+            <input type="radio" name="surveyor" value="yes" style="margin-bottom: 20px" style="margin-left: 20px;" required> Yes
+            <input type="radio" name="surveyor" value="no" style="margin-bottom: 20px" style="margin-left: 20px;" required> No
         </div>
 
         <!-- Submit Button -->

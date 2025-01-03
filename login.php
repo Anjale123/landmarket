@@ -40,7 +40,7 @@
     <div class="login-form text-center p-4 shadow rounded">
         <img src="Image/user.png" alt="">
         <h2 class="mb-4">Login</h2>
-        <form  method="post" action="login.php">>
+        <form  method="post" action="login.php">
             <div class="form-group">
                 <label for="email" style="margin-bottom: 5px"><b> Email Address</b></label>
                 <input type="email" name="mail" style="margin-bottom: 20px;border-color:#06b30e;" class="form-control" id="email" placeholder="Enter email">
